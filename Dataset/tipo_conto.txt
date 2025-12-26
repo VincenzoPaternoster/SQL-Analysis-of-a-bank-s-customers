@@ -1,0 +1,5 @@
+id_tipo_conto,desc_tipo_conto
+0,Conto Base
+1,Conto Business
+2,Conto Privati
+3,Conto Famiglie

@@ -1,0 +1,9 @@
+id_tipo_transazione,desc_tipo_trans,segno
+0,Stipendio,+
+1,Pensione,+
+2,Dividendi,+
+3,Acquisto su Amazon,-
+4,Rata mutuo,-
+5,Hotel,-
+6,Biglietto aereo,-
+7,Supermercato,-

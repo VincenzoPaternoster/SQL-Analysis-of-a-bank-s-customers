@@ -22,27 +22,28 @@ SQL Analysis of a bank's customers/
 ## 🎯 Project objectives
 
 
-##### 1. The main objective of the project is to create a feature table (denormalized table) for training machine learning models, enriching customer data with various indicators calculated from their transactions and accounts.
+#### 1. The main objective of the project is to create a feature table (denormalized table) for training machine learning models, enriching customer data with various indicators calculated from their transactions and accounts.
 
-##### 2. Before obtaining the denormalised table, it will be necessary to calculate demographic and behavioural indicators,such as:
+#### 2. Before obtaining the denormalised table, it will be necessary to calculate demographic and behavioural indicators,such as:
 
-####### a) Customer age
+##### Basic indicator
+###### a) Customer age
 
-###### Transaction indicators
-####### b) Number of outgoing transactions on all accounts
-####### c) Number of incoming transactions on all accounts
-####### d) Total amount transacted outgoing on all accounts
-####### e) Total amount transacted incoming on all accounts
+##### Transaction indicators
+###### b) Number of outgoing transactions on all accounts
+###### c) Number of incoming transactions on all accounts
+###### d) Total amount transacted outgoing on all accounts
+###### e) Total amount transacted incoming on all accounts
 
-###### Account indicators
-####### f) Total number of accounts held
-####### g) Number of accounts held by type
+##### Account indicators
+###### f) Total number of accounts held
+###### g) Number of accounts held by type
 
-###### Transaction indicators by account type
-####### h) Number of outgoing transactions by account type
-####### i) Number of incoming transactions by account type
-####### l) Outgoing transaction amount by account type 
-####### m) Incoming transaction amount by account type 
+##### Transaction indicators by account type
+###### h) Number of outgoing transactions by account type
+###### i) Number of incoming transactions by account type
+###### l) Outgoing transaction amount by account type 
+###### m) Incoming transaction amount by account type 
 
 ---
 

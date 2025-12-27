@@ -13,9 +13,9 @@ SQL Analysis of a bank's customers/
       │── tipo_conto.txt
       │── transazioni.txt
       │── tipo_transazione.txt
-  │── images/
   │── SQL/
-      │── SQL_Bank_Project.sql
+      │── Calculation_of_indicators.sql
+      │── FinaL_table.sql
   │__ README.md
 
 ```

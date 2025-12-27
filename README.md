@@ -49,9 +49,13 @@ SQL Analysis of a bank's customers/
 
 ## 🗂️ Dataset
 **Source:** Profession AI - Master in Data Analytics
+
 **Period examined:** from 2019 to 2022  
+
 **Dimension of dataset:** dataset_cliente=200 customers
+
 **Dimension of dataset:** dataset_transazioni=14.685 transactions
+
 **Dimension of dataset:** dataset_conto=240 accounts
 
 ### 📌 Key variables

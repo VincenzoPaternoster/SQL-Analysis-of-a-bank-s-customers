@@ -1,5 +1,6 @@
 # 📌 SQL Analysis of a bank's customers
-The aim of the project is to create a feature table for training machine learning models, enriching customer data with various indicators calculated from their transactions and accounts. The final table will refer to the customer ID and contain both quantitative and qualitative information.
+The aim of the project is to create a feature table for training machine learning models, enriching customer data with various indicators calculated from their transactions and accounts. 
+The final table will refer to the customer ID and contain both quantitative and qualitative information.
 
 ---
 
@@ -16,38 +17,83 @@ SQL Analysis of a bank's customers/
   │── SQL/
       │── SQL_Bank_Project.sql
   │__ README.md
-```
 
+```
 ## 🎯 Project objectives
 
 
-##### 1. The main objective of the project is to develop a machine learning model capable of accurately identifying fake news.
-##### The secondary objectives will be:
-##### 2. Data analysis
-      a) Is fake news more common in certain categories?
-      b) Are there topics more commonly associated with fake news?
-      c) Do fake news headlines follow recurring patterns?
-##### 3. Training model
-    a) Which combination of NLP and machine learning techniques leads to the best model?
-##### 4. Model evaluation
-    a) What types of performance metrics should be used to evaluate the model's efficiency?
+##### 1. The main objective of the project is to create a feature table (denormalized table) for training machine learning models, enriching customer data with various indicators calculated from their transactions and accounts.
 
-##### 5. Exporting the model to pickle
+##### 2. Before obtaining the denormalised table, it will be necessary to calculate demographic and behavioural indicators,such as:
+
+####### a) Customer age
+
+###### Transaction indicators
+####### b) Number of outgoing transactions on all accounts
+####### c) Number of incoming transactions on all accounts
+####### d) Total amount transacted outgoing on all accounts
+####### e) Total amount transacted incoming on all accounts
+
+###### Account indicators
+####### f) Total number of accounts held
+####### g) Number of accounts held by type
+
+###### Transaction indicators by account type
+####### h) Number of outgoing transactions by account type
+####### i) Number of incoming transactions by account type
+####### l) Outgoing transaction amount by account type 
+####### m) Incoming transaction amount by account type 
+
 ---
 
 ## 🗂️ Dataset
 **Source:** Profession AI - Master in Data Analytics
-**Period examined:** from 2015 to 2018  
-**Dimension of dataset:** Fake Dataset: 23481 news and True Dataset: 21417 news
+**Period examined:** from 2019 to 2022  
+**Dimension of dataset:** dataset_cliente=200 customers
+**Dimension of dataset:** dataset_transazioni=14.685 transactions
+**Dimension of dataset:** dataset_conto=240 accounts
 
 ### 📌 Key variables
-| Variables | Description |
-|----------|-------------|
-| Title | News title |
-| Text  | News text |
-| Subject| News category |
-| Date | Date of news|
----
+
+##### CLIENTE
+| Variables |Type |Description |
+|-----------|-----|------------|
+| id_cliente |int  |Customer identifier|
+| nome  |text      |Customer name|
+| cognome|text     |Customer surname|
+| data_nascita|date|Customer birthday |
+
+##### CONTO
+| Variables |Type |Description |
+|-----------|-----|------------|
+| id_conto |int  |Account identifier|
+| id_cliente |int  |Customer identifier|
+| id_tipo_conto|int|Type of account|
+
+
+##### TIPO CONTO
+| Variables |Type |Description |
+|-----------|-----|------------|
+| id_tipo_conto|int| Type of account|
+| desc_tipo_conto|text |Account description|
+
+##### TRANSAZIONI
+| Variables |Type |Description |
+|-----------|-----|------------|
+| data |date          |Date of transaction|
+| id_tipo_tran|int  |Type of transaction|
+| importo|real/float  |Transaction amount|
+| id_conto|int        |Account identifier|
+
+
+##### TIPO TRANSAZIONE
+| Variables |Type |Description |
+|-----------|-----|------------|
+| id_tipo_tran|int  |Type of transaction|
+| desc_tipo_trans|text        |Transaction description|
+| segno|text        |Transaction symbol (+ or -)|
+
+
 
 ## 🧹 Data Cleaning
 Key operations performed:

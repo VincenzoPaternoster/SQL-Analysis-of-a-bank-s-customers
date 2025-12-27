@@ -98,39 +98,16 @@ SQL Analysis of a bank's customers/
 | desc_tipo_trans|text        |Transaction description|
 | segno|text        |Transaction symbol (+ or -)|
 
-
-
-## 🧹 Data Cleaning
-Key operations performed:
-- Handling missing values
-- Format correction (dates format)
-- Data preprocessing (e.g. Remove punctuation, remove stopwords, tokenizzation, vectorizzation)
 ---
 
-## 📊 Methodology:
-- Used techniques (Nltk,N-gram, NER, Logistic Regression, Multilayer Perceptron)
-- Main libraries (Pandas,Sklearn,Spacy,Matplotlib,Seaborn,Gensim)
-
----
-
-## 🔍 Key results
-- **Insight 1**: The categories of news with the most fake news concern ‘News’, “Politics” and ‘Left-news’ [Box chart](https://github.com/VincenzoPaternoster/NLP-Detection-of-Fake-News/blob/main/images/Insights%20on%20fake%20news/MostFakeCategories.png)
-- **Insight 2**: The topics with the highest number of fake news stories are ‘Donald Trump’, ‘Hilary Clinton’, ‘White House’ and ‘United States’, in line with the period (from 2015 to 2018) in which the news was collected, i.e. pre, during and post US elections [Box chart](https://github.com/VincenzoPaternoster/NLP-Detection-of-Fake-News/blob/main/images/Insights%20on%20fake%20news/MostUsedTopics.png) and [Word cloud](https://github.com/VincenzoPaternoster/NLP-Detection-of-Fake-News/blob/main/images/Insights%20on%20fake%20news/WordCloud.png)
-- **Insight 3**: News headlines have recognisable and repetitive patterns that include the use of names of people (PERSON), organisations (ORG) and nationalities/political groups (NORP). In fact, the main elements contained in fake news headlines are “Donald Trump”, “President Trump”, “Hilary Clinton”, “White House” and “Fox News” [Box chart](https://github.com/VincenzoPaternoster/NLP-Detection-of-Fake-News/blob/main/images/Insights%20on%20fake%20news/MostFrequentBi.png) and [Box chart with NER entities](https://github.com/VincenzoPaternoster/NLP-Detection-of-Fake-News/blob/main/images/Insights%20on%20fake%20news/NER_MostHead.png)
-- **Insight 4**: Finally, two models (Logistic regression and Multi Perceptron, MLP) were trained and tested with the aim of creating a browser plug-in capable of filtering fake news. The analyses and results showed that the MLP model was better able to predict fake news than the Logistic regression model [Comparison between models](https://github.com/VincenzoPaternoster/NLP-Detection-of-Fake-News/blob/main/images/Training%20model/CombinedConfusion.png)
-
-
----
 
 ## 🧠 Conclusions
-##### In this project I learned how to use spacy, nltk (n-gram), gensim (simple_preprocess) and sklearn (MLP,Logistic regression,Vectorizer, train_test_split, classification report, confusion matrix) in order to execute operations of natural language processing mixed with machine learning tecniques such as logistic regression and multilayer perceptron (MLP).
+##### In this project, I learned how to use basic SQL commands and understood how to build a denormalised table (feature table) ready to be used for training machine learning models.
 ---
 
 ## 🛠️ Tools
-- Python (pandas,matplotlib,seaborn,sklearn,gensim)
-- Google Colab
-- Obsidian
-
+- MySQL 
+- XAMPP Control Panel
 ---
 
 ## 📬 Contacts

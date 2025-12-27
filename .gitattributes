@@ -1,1 +1,5 @@
 *.sql linguist-language=SQL
+*.sql linguist-detectable=true
+
+Dataset/* linguist-vendored
+*.txt linguist-vendored

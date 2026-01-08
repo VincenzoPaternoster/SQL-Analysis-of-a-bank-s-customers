@@ -60,7 +60,7 @@ SQL Analysis of a bank's customers/
 
 ### 📌 Key variables
 
-##### CLIENTE
+##### Customer
 | Variables |Type |Description |
 |-----------|-----|------------|
 | id_cliente |int  |Customer identifier|
@@ -68,7 +68,7 @@ SQL Analysis of a bank's customers/
 | cognome|text     |Customer surname|
 | data_nascita|date|Customer birthday |
 
-##### CONTO
+##### Account
 | Variables |Type |Description |
 |-----------|-----|------------|
 | id_conto |int  |Account identifier|
@@ -76,13 +76,13 @@ SQL Analysis of a bank's customers/
 | id_tipo_conto|int|Type of account|
 
 
-##### TIPO CONTO
+##### Type of account
 | Variables |Type |Description |
 |-----------|-----|------------|
 | id_tipo_conto|int| Type of account|
 | desc_tipo_conto|text |Account description|
 
-##### TRANSAZIONI
+##### Transactions
 | Variables |Type |Description |
 |-----------|-----|------------|
 | data |date          |Date of transaction|
@@ -91,7 +91,7 @@ SQL Analysis of a bank's customers/
 | id_conto|int        |Account identifier|
 
 
-##### TIPO TRANSAZIONE
+##### Type of transaction
 | Variables |Type |Description |
 |-----------|-----|------------|
 | id_tipo_tran|int  |Type of transaction|

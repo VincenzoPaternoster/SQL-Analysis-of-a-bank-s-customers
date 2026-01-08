@@ -108,6 +108,7 @@ SQL Analysis of a bank's customers/
 ## 🛠️ Tools
 - MySQL 
 - XAMPP Control Panel
+- SQL Server Management Studio
 ---
 
 ## 📬 Contacts
